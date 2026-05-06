@@ -3,9 +3,8 @@
 #------------------------------------------------------------------------------
 # Panel Config
 
-# Your SVG uses IDs like `macmini1-connection-status` (no `cell-` prefix),
-# so the preamble must be empty.
-cellIdPreamble: ""
+# Your exported SVG uses IDs like `cell-macmini1-connection-status`
+cellIdPreamble: "cell-"
 
 # Optional: use lastNotNull so sparse series still show a status.
 datapoint: "lastNotNull"

@@ -4,8 +4,8 @@
 # Requires Flow panel option "Test Data Generation / test-timeseries-enrichment" to be enabled.
 #
 
-# Your SVG uses IDs like `macmini1-connection-status` (no `cell-` prefix)
-cellIdPreamble: ""
+# Your exported SVG uses IDs like `cell-macmini1-connection-status`
+cellIdPreamble: "cell-"
 
 # Helpful when test series contain nulls at the end of the window
 datapoint: "lastNotNull"
