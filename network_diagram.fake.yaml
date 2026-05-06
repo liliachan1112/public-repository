@@ -27,6 +27,12 @@ anchors:
       thresholds:
         - {color: "#EF4444", level: -1} # red
         - {color: "#22C55E", level: 0}  # green
+    # For connectors (lines), drive their stroke color too.
+    strokeColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#EF4444", level: -1} # red
+        - {color: "#22C55E", level: 0}  # green
 
 cells:
   # Nodes (alternate sin/cos so not everything flips together)
