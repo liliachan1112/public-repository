@@ -1,0 +1,166 @@
+---
+
+#------------------------------------------------------------------------------
+# YAML Aliases (same style as example/example.yaml)
+
+anchorLinks:
+  - link: &docs
+      url: "https://github.com/andymchugh/andrewbmchugh-flow-panel/blob/main/src/README.md"
+  - link: &drawio
+      url: "https://app.diagrams.net/?p=svgdata"
+
+#------------------------------------------------------------------------------
+# Panel Config (drives `network_diagram.svg`)
+#
+# NOTE: this file uses the Flow panel's built-in test series (`test-data-*`).
+# You must enable "Test Data Generation / test-timeseries-enrichment" in the panel.
+
+cellIdPreamble: "cell-"
+datapoint: "lastNotNull"
+
+cells:
+  drawio:
+    link: *drawio
+  docs:
+    link: *docs
+
+  # Connection status widgets.
+  # We use sin/cos series and color based on threshold crossing at 0.
+  # (>=0 -> green, <0 -> red)
+  macmini1-connection-status:
+    dataRef: "test-data-small-sin"
+    label:
+      separator: "replace"
+      units: "none"
+      decimalPoints: 0
+    labelColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#EF4444", level: -1}
+        - {color: "#22C55E", level: 0}
+
+  macmini2-connection-status:
+    dataRef: "test-data-small-cos"
+    label:
+      separator: "replace"
+      units: "none"
+      decimalPoints: 0
+    labelColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#EF4444", level: -1}
+        - {color: "#22C55E", level: 0}
+
+  macstudio1-connection-status:
+    dataRef: "test-data-large-sin"
+    label:
+      separator: "replace"
+      units: "none"
+      decimalPoints: 0
+    labelColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#EF4444", level: -1}
+        - {color: "#22C55E", level: 0}
+
+  macstudio2-connection-status:
+    dataRef: "test-data-large-cos"
+    label:
+      separator: "replace"
+      units: "none"
+      decimalPoints: 0
+    labelColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#EF4444", level: -1}
+        - {color: "#22C55E", level: 0}
+
+  macstudio3-connection-status:
+    dataRef: "test-data-small-sin"
+    label:
+      separator: "replace"
+      units: "none"
+      decimalPoints: 0
+    labelColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#EF4444", level: -1}
+        - {color: "#22C55E", level: 0}
+
+  macstudio4-connection-status:
+    dataRef: "test-data-small-cos"
+    label:
+      separator: "replace"
+      units: "none"
+      decimalPoints: 0
+    labelColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#EF4444", level: -1}
+        - {color: "#22C55E", level: 0}
+
+  # Connector lines (drive strokeColor like the example drives labelColor/fillColor)
+  macmini1-macstudio1-connection-status:
+    dataRef: "test-data-large-sin"
+    strokeColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#EF4444", level: -1}
+        - {color: "#22C55E", level: 0}
+
+  macmini1-macstudio2-connection-status:
+    dataRef: "test-data-large-cos"
+    strokeColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#EF4444", level: -1}
+        - {color: "#22C55E", level: 0}
+
+  macmini1-macstudio3-connection-status:
+    dataRef: "test-data-small-sin"
+    strokeColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#EF4444", level: -1}
+        - {color: "#22C55E", level: 0}
+
+  macmini1-macstudio4-connection-status:
+    dataRef: "test-data-small-cos"
+    strokeColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#EF4444", level: -1}
+        - {color: "#22C55E", level: 0}
+
+  macmini2-macstudio1-connection-status:
+    dataRef: "test-data-large-cos"
+    strokeColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#EF4444", level: -1}
+        - {color: "#22C55E", level: 0}
+
+  macmini2-macstudio2-connection-status:
+    dataRef: "test-data-large-sin"
+    strokeColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#EF4444", level: -1}
+        - {color: "#22C55E", level: 0}
+
+  macmini2-macstudio3-connection-status:
+    dataRef: "test-data-small-cos"
+    strokeColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#EF4444", level: -1}
+        - {color: "#22C55E", level: 0}
+
+  macmini2-macstudio4-connection-status:
+    dataRef: "test-data-small-sin"
+    strokeColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#EF4444", level: -1}
+        - {color: "#22C55E", level: 0}
+
