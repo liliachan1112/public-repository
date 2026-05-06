@@ -1,0 +1,79 @@
+---
+
+#------------------------------------------------------------------------------
+# Panel Config
+
+# Your SVG uses IDs like `macmini1-connection-status` (no `cell-` prefix),
+# so the preamble must be empty.
+cellIdPreamble: ""
+
+# Optional: use lastNotNull so sparse series still show a status.
+datapoint: "lastNotNull"
+
+# Re-usable "connection status" drive settings via YAML anchor.
+anchors:
+  connectionStatusCell: &connectionStatusCell
+    label:
+      separator: "replace"
+      units: "none"
+      decimalPoints: 0
+      valueMappings:
+        - {value: null, text: "Unknown"}
+        - {value: 0, text: "Disconnected"}
+        - {value: 1, text: "Connected"}
+    labelColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#9CA3AF", level: -1} # grey (unknown)
+        - {color: "#EF4444", level: 0}  # red (down)
+        - {color: "#22C55E", level: 1}  # green (up)
+
+cells:
+  # Mac mini nodes
+  macmini1-connection-status:
+    dataRef: "macmini1-connection-status"
+    <<: *connectionStatusCell
+  macmini2-connection-status:
+    dataRef: "macmini2-connection-status"
+    <<: *connectionStatusCell
+
+  # Mac studio nodes
+  macstudio1-connection-status:
+    dataRef: "macstudio1-connection-status"
+    <<: *connectionStatusCell
+  macstudio2-connection-status:
+    dataRef: "macstudio2-connection-status"
+    <<: *connectionStatusCell
+  macstudio3-connection-status:
+    dataRef: "macstudio3-connection-status"
+    <<: *connectionStatusCell
+  macstudio4-connection-status:
+    dataRef: "macstudio4-connection-status"
+    <<: *connectionStatusCell
+
+  # Links (edges) between nodes
+  macmini1-macstudio1-connection-status:
+    dataRef: "macmini1-macstudio1-connection-status"
+    <<: *connectionStatusCell
+  macmini1-macstudio2-connection-status:
+    dataRef: "macmini1-macstudio2-connection-status"
+    <<: *connectionStatusCell
+  macmini1-macstudio3-connection-status:
+    dataRef: "macmini1-macstudio3-connection-status"
+    <<: *connectionStatusCell
+  macmini1-macstudio4-connection-status:
+    dataRef: "macmini1-macstudio4-connection-status"
+    <<: *connectionStatusCell
+
+  macmini2-macstudio1-connection-status:
+    dataRef: "macmini2-macstudio1-connection-status"
+    <<: *connectionStatusCell
+  macmini2-macstudio2-connection-status:
+    dataRef: "macmini2-macstudio2-connection-status"
+    <<: *connectionStatusCell
+  macmini2-macstudio3-connection-status:
+    dataRef: "macmini2-macstudio3-connection-status"
+    <<: *connectionStatusCell
+  macmini2-macstudio4-connection-status:
+    dataRef: "macmini2-macstudio4-connection-status"
+    <<: *connectionStatusCell
