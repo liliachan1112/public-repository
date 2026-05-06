@@ -1,0 +1,51 @@
+---
+#
+# Fake-data panelConfig for `network_diagram.svg`
+# Requires Flow panel option "Test Data Generation / test-timeseries-enrichment" to be enabled.
+#
+
+# Your SVG uses IDs like `macmini1-connection-status` (no `cell-` prefix)
+cellIdPreamble: ""
+
+# Helpful when test series contain nulls at the end of the window
+datapoint: "lastNotNull"
+
+anchors:
+  # The built-in test series are sin/cos waves in roughly [-1, 1].
+  # We'll treat >= 0 as "Connected" and < 0 as "Disconnected".
+  connectionStatusCell: &connectionStatusCell
+    label:
+      separator: "replace"
+      units: "none"
+      decimalPoints: 0
+      valueMappings:
+        - {value: null, text: "Unknown"}
+        - {valueMax: -0.000001, text: "Disconnected"}
+        - {valueMin: 0, text: "Connected"}
+    labelColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#EF4444", level: -1} # red
+        - {color: "#22C55E", level: 0}  # green
+
+cells:
+  # Nodes (alternate sin/cos so not everything flips together)
+  macmini1-connection-status: {dataRef: "test-data-small-sin", <<: *connectionStatusCell}
+  macmini2-connection-status: {dataRef: "test-data-small-cos", <<: *connectionStatusCell}
+
+  macstudio1-connection-status: {dataRef: "test-data-large-sin", <<: *connectionStatusCell}
+  macstudio2-connection-status: {dataRef: "test-data-large-cos", <<: *connectionStatusCell}
+  macstudio3-connection-status: {dataRef: "test-data-small-sin", <<: *connectionStatusCell}
+  macstudio4-connection-status: {dataRef: "test-data-small-cos", <<: *connectionStatusCell}
+
+  # Links / edges
+  macmini1-macstudio1-connection-status: {dataRef: "test-data-large-sin", <<: *connectionStatusCell}
+  macmini1-macstudio2-connection-status: {dataRef: "test-data-large-cos", <<: *connectionStatusCell}
+  macmini1-macstudio3-connection-status: {dataRef: "test-data-small-sin", <<: *connectionStatusCell}
+  macmini1-macstudio4-connection-status: {dataRef: "test-data-small-cos", <<: *connectionStatusCell}
+
+  macmini2-macstudio1-connection-status: {dataRef: "test-data-large-cos", <<: *connectionStatusCell}
+  macmini2-macstudio2-connection-status: {dataRef: "test-data-large-sin", <<: *connectionStatusCell}
+  macmini2-macstudio3-connection-status: {dataRef: "test-data-small-cos", <<: *connectionStatusCell}
+  macmini2-macstudio4-connection-status: {dataRef: "test-data-small-sin", <<: *connectionStatusCell}
+
