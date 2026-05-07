@@ -127,6 +127,12 @@ cells:
         - {color: "#9CA3AF", level: -1}
         - {color: "#EF4444", level: 0}
         - {color: "#22C55E", level: 1}
+    strokeColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#9CA3AF", level: -1}
+        - {color: "#EF4444", level: 0}
+        - {color: "#22C55E", level: 1}
   macmini1-macstudio2-connection-status:
     dataRef: "macmini1-macstudio2-connection-status"
     label:
@@ -138,6 +144,12 @@ cells:
         - {value: 0, text: "Disconnected"}
         - {value: 1, text: "Connected"}
     labelColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#9CA3AF", level: -1}
+        - {color: "#EF4444", level: 0}
+        - {color: "#22C55E", level: 1}
+    strokeColor:
       gradientMode: "none"
       thresholds:
         - {color: "#9CA3AF", level: -1}
@@ -159,6 +171,12 @@ cells:
         - {color: "#9CA3AF", level: -1}
         - {color: "#EF4444", level: 0}
         - {color: "#22C55E", level: 1}
+    strokeColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#9CA3AF", level: -1}
+        - {color: "#EF4444", level: 0}
+        - {color: "#22C55E", level: 1}
   macmini1-macstudio4-connection-status:
     dataRef: "macmini1-macstudio4-connection-status"
     label:
@@ -170,6 +188,12 @@ cells:
         - {value: 0, text: "Disconnected"}
         - {value: 1, text: "Connected"}
     labelColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#9CA3AF", level: -1}
+        - {color: "#EF4444", level: 0}
+        - {color: "#22C55E", level: 1}
+    strokeColor:
       gradientMode: "none"
       thresholds:
         - {color: "#9CA3AF", level: -1}
@@ -192,6 +216,12 @@ cells:
         - {color: "#9CA3AF", level: -1}
         - {color: "#EF4444", level: 0}
         - {color: "#22C55E", level: 1}
+    strokeColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#9CA3AF", level: -1}
+        - {color: "#EF4444", level: 0}
+        - {color: "#22C55E", level: 1}
   macmini2-macstudio2-connection-status:
     dataRef: "macmini2-macstudio2-connection-status"
     label:
@@ -203,6 +233,12 @@ cells:
         - {value: 0, text: "Disconnected"}
         - {value: 1, text: "Connected"}
     labelColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#9CA3AF", level: -1}
+        - {color: "#EF4444", level: 0}
+        - {color: "#22C55E", level: 1}
+    strokeColor:
       gradientMode: "none"
       thresholds:
         - {color: "#9CA3AF", level: -1}
@@ -224,6 +260,12 @@ cells:
         - {color: "#9CA3AF", level: -1}
         - {color: "#EF4444", level: 0}
         - {color: "#22C55E", level: 1}
+    strokeColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#9CA3AF", level: -1}
+        - {color: "#EF4444", level: 0}
+        - {color: "#22C55E", level: 1}
   macmini2-macstudio4-connection-status:
     dataRef: "macmini2-macstudio4-connection-status"
     label:
@@ -235,6 +277,12 @@ cells:
         - {value: 0, text: "Disconnected"}
         - {value: 1, text: "Connected"}
     labelColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#9CA3AF", level: -1}
+        - {color: "#EF4444", level: 0}
+        - {color: "#22C55E", level: 1}
+    strokeColor:
       gradientMode: "none"
       thresholds:
         - {color: "#9CA3AF", level: -1}
