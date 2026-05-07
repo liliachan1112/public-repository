@@ -1,0 +1,35 @@
+---
+
+# PanelConfig for `simple-example/simple_example.svg`
+#
+# SVG element id is `cell-custom-text`, so we keep the YAML key as `custom-text`
+# and set the preamble to `cell-`.
+
+cellIdPreamble: "cell-"
+datapoint: "lastNotNull"
+
+cells:
+  custom-text:
+    # For testing without Prometheus, enable Flow panel "Test Data Generation"
+    # and this will animate.
+    dataRef: "custom-text"
+
+    # Replace the label text entirely with the mapped text.
+    # Note: if the SVG label is using <foreignObject> (html=1 in draw.io),
+    # label replacement may not work. In draw.io, turn HTML off for the text
+    # (set `html=0`) and re-export to get a real SVG <text> node.
+    label:
+      separator: "replace"
+      units: "none"
+      decimalPoints: 0
+      valueMappings:
+        - {value: null, text: "Unknown"}
+        - {valueMax: -0.000001, text: "DOWN"}
+        - {valueMin: 0, text: "UP"}
+
+    labelColor:
+      gradientMode: "none"
+      thresholds:
+        - {color: "#EF4444", level: -1}
+        - {color: "#22C55E", level: 0}
+
