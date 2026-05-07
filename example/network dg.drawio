@@ -138,32 +138,32 @@
           </mxCell>
         </object>
         <object label="Connected" id="macmini1-connection-status">
-          <mxCell parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#2AFF00);convertToSvg=1;svgWhiteSpace=wrap;" vertex="1">
+          <mxCell parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#2AFF00);convertToSvg=0;svgWhiteSpace=wrap;" vertex="1">
             <mxGeometry height="30" width="60" x="165" y="230" as="geometry" />
           </mxCell>
         </object>
         <object label="Connected" id="macmini2-connection-status">
-          <mxCell parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#2AFF00);convertToSvg=1;svgWhiteSpace=wrap;" vertex="1">
+          <mxCell parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#2AFF00);convertToSvg=0;svgWhiteSpace=wrap;" vertex="1">
             <mxGeometry height="30" width="60" x="165" y="390" as="geometry" />
           </mxCell>
         </object>
         <object label="Disconnected" id="macstudio2-connection-status">
-          <mxCell parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#FF6666);convertToSvg=1;svgWhiteSpace=wrap;" vertex="1">
+          <mxCell parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#FF6666);convertToSvg=0;svgWhiteSpace=wrap;" vertex="1">
             <mxGeometry height="30" width="60" x="545" y="122" as="geometry" />
           </mxCell>
         </object>
         <object label="Connected" id="macstudio4-connection-status">
-          <mxCell parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#2AFF00);convertToSvg=1;svgWhiteSpace=wrap;" vertex="1">
+          <mxCell parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#2AFF00);convertToSvg=0;svgWhiteSpace=wrap;" vertex="1">
             <mxGeometry height="30" width="60" x="545" y="262" as="geometry" />
           </mxCell>
         </object>
         <object label="Connected" id="macstudio1-connection-status">
-          <mxCell parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#2AFF00);convertToSvg=1;svgWhiteSpace=wrap;" vertex="1">
+          <mxCell parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#2AFF00);convertToSvg=0;svgWhiteSpace=wrap;" vertex="1">
             <mxGeometry height="30" width="60" x="545" y="392" as="geometry" />
           </mxCell>
         </object>
         <object label="Connected" id="macstudio3-connection-status">
-          <mxCell parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#2AFF00);convertToSvg=1;svgWhiteSpace=wrap;" vertex="1">
+          <mxCell parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#2AFF00);convertToSvg=0;svgWhiteSpace=wrap;" vertex="1">
             <mxGeometry height="30" width="60" x="545" y="522" as="geometry" />
           </mxCell>
         </object>
